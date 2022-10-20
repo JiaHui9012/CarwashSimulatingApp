@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="70dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="10dp"
+                android:maxLines="1"
+                android:text="Current Washing:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/carPlateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="10dp"
+                android:hint="no car is being washed"
+                android:text="no car is being washed"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="10dp"
+                android:maxLines="1"
+                android:text="Time Remaining:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/timeRemainingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="10dp"
+                android:hint="00:00:00"
+                android:text="00:00:00"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="10dp"
+                    android:maxLines="1"
+                    android:text="Total in Queue:"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/totalQueueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="10dp"
+                    android:hint="0"
+                    android:text="0"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:src="@drawable/carwash2"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/box" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/dropOff_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:text="Drop Off"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:layout_marginEnd="10dp"/>
+                <Button
+                    android:id="@+id/pickUp_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:text="Pick Up"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
